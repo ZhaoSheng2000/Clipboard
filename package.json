@@ -1,0 +1,19 @@
+{
+  "name": "clipboard",
+  "version": "1.0.0",
+  "description": "a paste for mac ,win",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ele": "yarn run nodemon  --exec electron .",
+    "start": "electron .",
+    "package": "electron-packager ./ Clipboard --win32  --out ./outapp --overwrite --icon=./icons/cb.ico --asar --app-version=1.0.0"
+  },
+  "author": "zhaosheng",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^12.0.7",
+    "electron-clipboard-watcher": "^1.0.1",
+    "electron-packager": "^15.2.0"
+  }
+}
